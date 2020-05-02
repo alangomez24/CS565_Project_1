@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(66, 66, 66);
+}
+
+#main_label{
+    background-color:  rgb(66, 66, 66);
+    color:white;
+    font-family:arial;
+}
+#subheading{
+    color:white;
+    font-family:arial;
+}
+#bio{
+    color:white;
+    font-family:arial;
+    margin:10px;
+}
+#links{
+    color: white;
+
+}
+#list1{
+    font-family:arial;
+    color: white;
+    border-style:solid;
+    border-color:white;
+    border-width:2px;
+    text-indent: 20px;
+    font-style: normal;
+    font-size: 14px;
+    margin: 10px;
+    list-style-type:circle;
+    list-style-position:inside;
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+    padding:7px;
+    width:90%;
+}
+#list1:hover{
+    background-color: rgb(71, 71, 71);
+    border-color:rgb(71, 71, 71);
+}
+#link1{
+    color: white;
+    text-decoration: none;
+}
+#link1:hover{
+    color: rgb(50, 134, 243);
+    text-decoration: underline;
+}
+#link1:active{
+    color:white;
+}
+#link2{
+    color: white;
+    text-decoration: none;
+}
+#link2:active{
+    color:white;
+}
+#link2:hover{
+    color: rgb(50, 134, 243);
+    text-decoration:underline;
+
+}
+#links_label{
+    color: white;
+    font-weight: bold;
+}
+#feature1{
+    font-family:arial;
+    font-weight: bold;
+    color:white;
+    padding:7px;
+}
+#feature2{
+    font-family:arial;
+    font-weight: bold;
+    color:white;
+    padding:7px;
+}

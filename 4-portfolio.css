@@ -110,11 +110,38 @@ body{
     color:white;
     padding:7px;
 }
+.container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+#test_label {
+    grid-column: 3/4;
+}
 #feature2{
     font-family:arial;
     font-weight: bold;
     color:white;
     padding:7px;
+}
+#portfolio_display{
+    grid-column: 2/3;
+
+}
+.Main_Nav_Button:hover{
+    border-color:rgb(8, 187, 211);
+    border-width:3px;
+}
+.portfolio_button_1:hover{
+    border-color:rgb(8, 187, 211);
+    border-width:3px;
+}
+#submit_button:hover{
+    border-color:rgb(8, 187, 211);
+    border-width:3px;
+}
+#reset_button:hover{
+    border-color:rgb(8, 187, 211);
+    border-width:3px;
 }
 #Main_Section{
     color:white;

@@ -11,22 +11,35 @@
   <script>
     function about_me_nav() {
       document.getElementById("Main_Label").innerHTML = "About Me";
+      document.getElementById("Main_Section").innerHTML = "My main interests currently are Machine Learning and Software Engineering. My professional goals integrate \
+                                                          machine learning models in secure and efficient software. I do not have work experience as \
+                                                          a developer. \
+                                                          I have a Bachelors degree in Biology. My thesis described mitogen networks \
+                                                          in regenerating tissue and a newly identified feedback loop ostensibly used to control morphogenesis. \
+                                                          I have worked at the University of Oregon Institute of Molecular Biology and Stanford University Institute for Stem Cell Biology and Regenerative Medicine \
+                                                          as a research assistant on similar projects related to signaling networks in osteogenesis.";
+    }
+    function portfolio_nav() {
+      document.getElementById("Main_Label").innerHTML = "Portfolio";
+      document.getElementById("Main_Section").innerHTML = "";
+    }
+    function contact_me_nav() {
+      document.getElementById("Main_Label").innerHTML = "Contact";
+      document.getElementById("Main_Section").innerHTML = "";
     }
   </script>
   <body>
     <h1><label id="main_label">Alan Gomez</label></h1>
     <h2><div id="subheading">PDX EDU CS Masters student</div></h2>
     <ul id = "list1">
-      <button type="button" onclick="about_me_nav();" href="google.com" class="Main_Nav_Button">About Me</button>
-      <button type="button" href="google.com" class="Main_Nav_Button">Portfolio</button>
-      <button type="button" href="google.com" class="Main_Nav_Button">About Me</button>
+      <button type="button" onclick="about_me_nav();" class="Main_Nav_Button">About Me</button>
+      <button type="button" onclick="portfolio_nav();" class="Main_Nav_Button">Portfolio</button>
+      <button type="button" onclick="contact_me_nav()" class="Main_Nav_Button">Contact Me</button>
     </ul>
-    <div id="bio">Bio: My main interests are Machine Learning, Software Engineering.
-    </div>
-    <label id="Main_Label">Project Feature z:</label></br>
-    <img src="img1.jpg"></br>
-    <label id="feature2">Project Feature z:</label>
-    <img src="img2.jpg">    
+
+    <label id="Main_Label"></label></br>
+    <div id="Main_Section"></div>
+  
   </body>
 </html>
  

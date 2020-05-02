@@ -23,9 +23,23 @@
                                                           I have worked at the University of Oregon Institute of Molecular Biology and Stanford University Institute for Stem Cell Biology and Regenerative Medicine \
                                                           as a research assistant on similar projects related to signaling networks in osteogenesis.";
     }
+
+    var portfolio_html = ["<div id=portfolio_div>", 
+                          "<label>Select Project:</label><br>",
+                          "<button id=\"portfolio_button_1\" alt=\"project 1 button\">Project 1</button><br>",
+                          "<button id=\"portfolio_button_1\" alt=\"project 2 button\">Project 2</button><br>",
+                          "<button id=\"portfolio_button_1\" alt=\"project 3 button\">Project 3</button><br>",
+                          "<button id=\"portfolio_button_1\" alt=\"project 4 button\">Project 4</button><br>",
+                          "<button id=\"portfolio_button_1\" alt=\"project 5 button\">Project 5</button><br>",
+                          "</div>"];
+
     function portfolio_nav() {
       document.getElementById("Main_Label").innerHTML = "Portfolio";
       document.getElementById("Main_Section").innerHTML = "";
+      var i;
+      for (i=0; i<portfolio_html.length; ++i){
+        document.getElementById("Main_Section").innerHTML += portfolio_html[i];
+      }
     }
     function contact_me_nav() {
       document.getElementById("Main_Label").innerHTML = "Contact";

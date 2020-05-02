@@ -1,7 +1,9 @@
 body{
     background-color: rgb(66, 66, 66);
 }
-
+#body_id{
+    background-color: rgb(66, 66, 66);    
+}
 #main_label{
     background-color:  rgb(66, 66, 66);
     color:white;

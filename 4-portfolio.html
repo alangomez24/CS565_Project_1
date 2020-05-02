@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="4-portfolio.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
   </head>
   <script>
     function about_me_nav() {
@@ -25,10 +29,26 @@
     }
     function contact_me_nav() {
       document.getElementById("Main_Label").innerHTML = "Contact";
-      document.getElementById("Main_Section").innerHTML = "";
-    }
+      document.getElementById("Main_Section").innerHTML = "<div id=\"contact_div\">";
+      document.getElementById("Main_Section").innerHTML += "<form id=\"main-form\" class=\"container-fluid\">";
+      document.getElementById("Main_Section").innerHTML += "<h3 class=\"heading-label\">General Inquiries:</h3>";  
+      document.getElementById("Main_Section").innerHTML += "<label id=\"name-label\">Name: </label>";
+      document.getElementById("Main_Section").innerHTML += "<input alt=\"name input\" id=\"name-input\"><br>";
+      document.getElementById("Main_Section").innerHTML += "<label id=\"email-label\">Email:</label>";      
+      document.getElementById("Main_Section").innerHTML += "<input alt=\"email input\" id=\"email-input\"><br>";
+      document.getElementById("Main_Section").innerHTML += "<label id=\"submit-label\">Text:</label><br>";          
+      document.getElementById("Main_Section").innerHTML += "<textarea alt=\"message text box\" type=\"text\" id=\"message-input\"></textarea><br>";        
+      document.getElementById("Main_Section").innerHTML += "<div class = \"row r1 no-gutters\">";
+      document.getElementById("Main_Section").innerHTML += "<div class = \"col-lg-12\">";
+      document.getElementById("Main_Section").innerHTML += "<button alt=\"submit button\" type=\"submit\" class=\"submit_button\">Submit</button>";     
+      document.getElementById("Main_Section").innerHTML += "<button alt=\"reset button\" type=\"submit\" class=\"reset_button\">Reset</button>";        
+      document.getElementById("Main_Section").innerHTML += "</div>";  
+      document.getElementById("Main_Section").innerHTML += "</div>";  
+      document.getElementById("Main_Section").innerHTML += "</form>";  
+      document.getElementById("Main_Section").innerHTML += "</div>";    
+    };
   </script>
-  <body>
+  <body id="body_id">
     <h1><label id="main_label">Alan Gomez</label></h1>
     <h2><div id="subheading">PDX EDU CS Masters student</div></h2>
     <ul id = "list1">

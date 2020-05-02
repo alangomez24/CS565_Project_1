@@ -20,6 +20,12 @@ body{
     color: white;
 
 }
+#Main_Label{
+    font-size: 40px;
+    color: white;
+    border-color: white;
+    border-width: 2px;
+}
 #list1{
     font-family:arial;
     color: white;
@@ -36,13 +42,6 @@ body{
     position: -webkit-sticky;
     top:0;
     width:98%;
-}
-
-#Main_Label{
-    font-size: 40px;
-    color: white;
-    border-color: white;
-    border-width: 2px;
 }
 
 .Main_Nav_Button{

@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="4-portfolio.css" />
 
   </head>
+  <script>
+    function about_me_nav() {
+      document.getElementById("Main_Label").innerHTML = "About Me";
+    }
+  </script>
   <body>
     <h1><label id="main_label">Alan Gomez</label></h1>
     <h2><div id="subheading">PDX EDU CS Masters student</div></h2>
     <ul id = "list1">
-      <label id="links_label">Links:</label>
-      <li><a href="https://www.google.com" id="link1">Google</a></li>
-      <li><a href="https://www.yahoo.com" id="link2">Yahoo</a></li>
+      <button type="button" onclick="about_me_nav();" href="google.com" class="Main_Nav_Button">About Me</button>
+      <button type="button" href="google.com" class="Main_Nav_Button">Portfolio</button>
+      <button type="button" href="google.com" class="Main_Nav_Button">About Me</button>
     </ul>
     <div id="bio">Bio: My main interests are Machine Learning, Software Engineering.
     </div>
-    <label id="feature1">Project Feature z:</label></br>
+    <label id="Main_Label">Project Feature z:</label></br>
     <img src="img1.jpg"></br>
     <label id="feature2">Project Feature z:</label>
     <img src="img2.jpg">    

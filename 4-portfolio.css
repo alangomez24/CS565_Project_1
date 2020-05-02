@@ -116,6 +116,7 @@ body{
 }
 #test_label {
     grid-column: 3/4;
+    column-span: 3/4;
 }
 #feature2{
     font-family:arial;

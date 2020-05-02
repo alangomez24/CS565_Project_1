@@ -24,24 +24,38 @@
                                                           as a research assistant on similar projects related to signaling networks in osteogenesis.";
     }
 
-    var portfolio_html = ["<div class=\"container\" id=portfolio_div>",
-                          "<div class=\"row\">",
-                          "<div class=\"column\">",
-                          "<ul id=\"portfolio_list\">",
-                          "<label>Select Project:</label><br>",
-                          "<button class=\"portfolio_button_1\" alt=\"project 1 button\">Project 1</button>",
-                          "<button class=\"portfolio_button_1\" alt=\"project 2 button\">Project 2</button>",
-                          "<button class=\"portfolio_button_1\" alt=\"project 3 button\">Project 3</button>",
-                          "<button class=\"portfolio_button_1\" alt=\"project 4 button\">Project 4</button>",
-                          "<button class=\"portfolio_button_1\" alt=\"project 5 button\">Project 5</button>",
-                          "</ul>",
-                          "</div>",
-                          "<div id=portfolio_display class=\"column\">",
-                          "<label id=\"test_label\" class=\"item\"> test3 </label>",
-                          "</div>",
-                          "</div>",
-                          ];
 
+    var portfolio_html = ["<div class=\"container\" id=portfolio_div>",
+                    "<div class=\"row\">",
+                    "<div class=\"column\">",
+                    "<ul id=\"portfolio_list\">",
+                    "<label>Select Project:</label><br>",
+                    "<button class=\"portfolio_button_1\" alt=\"project 1 button\" onclick=\"display_p_1()\">Project 1</button>",
+                    "<button class=\"portfolio_button_1\" alt=\"project 2 button\" onclick=\"display_p_2()\">Project 2</button>",
+                    "<button class=\"portfolio_button_1\" alt=\"project 3 button\" onclick=\"display_p_3()\">Project 3</button>",
+                    "<button class=\"portfolio_button_1\" alt=\"project 4 button\" onclick=\"display_p_4()\">Project 4</button>",
+                    "<button class=\"portfolio_button_1\" alt=\"project 5 button\" onclick=\"display_p_5()\">Project 5</button>",
+                    "</ul>",
+                    "</div>",
+                    "<div id=portfolio_display>",
+                    "</div>",
+                    "</div>",
+                    ];
+    function display_p_1() {
+      document.getElementById("portfolio_display").innerHTML = "<img src=\"img1.jpg\">";
+    }
+    function display_p_2() {
+      document.getElementById("portfolio_display").innerHTML = "";
+    }
+    function display_p_3() {
+      document.getElementById("portfolio_display").innerHTML = "<img src=\"img1.jpg\">";
+    }
+    function display_p_4() {
+      document.getElementById("portfolio_display").innerHTML = "<img src=\"img1.jpg\">";
+    }
+    function display_p_5() {
+      document.getElementById("portfolio_display").innerHTML = "<img src=\"img1.jpg\">";
+    }
     function portfolio_nav() {
       document.getElementById("Main_Label").innerHTML = "Portfolio";
       document.getElementById("Main_Section").innerHTML = "";
